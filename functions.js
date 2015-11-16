@@ -48,3 +48,15 @@ function square(num){
 
 var test = [2,3,4,5];
 var squared = test.map(square);
+
+//A function that squares the "num" property of an object in an array
+
+var test = [{num: 5}, {num: 2}];
+
+function squareFromObj(obj){
+    //Every element that will get passed through this function will have its .num property squared
+    return obj.num * obj.num;
+}
+
+test.map(squareFromObj);
+
