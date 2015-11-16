@@ -14,4 +14,5 @@ var test = ['hello, how are you?', 'there we go','this is some crazy coding thin
 
 test.sort(longest);
 
-//
+//A function that sorts an array of objects based on name length and the email(alphabetically).
+
