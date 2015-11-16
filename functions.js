@@ -60,3 +60,19 @@ function squareFromObj(obj){
 
 test.map(squareFromObj);
 
+//A function that returns another function that performs the indicated operation
+
+function operationMaker(operation){
+    return function(num1, num2){
+        var result;
+        operation === 'add' ? result = num1 + num2 :
+        operation === 'subtract' ? result = num1 - num2 :
+        operation === 'mult' ? result = num1 * num2 :
+        operation === 'div' ? result = num1 / num2 :
+        result = 0;
+        return result;
+    }
+}
+
+operationMaker('mult')(3,2);
+
